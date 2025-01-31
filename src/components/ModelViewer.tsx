@@ -5,9 +5,20 @@ interface ModelViewerProps {
   title: string;
   modelPath: string;
   description?: string;
+  zoom?: number;
+  initialRotation?: {
+    x?: number;
+    y?: number;
+  };
 }
 
-const ModelViewer = ({ title, modelPath, description }: ModelViewerProps) => {
+const ModelViewer = ({
+  title,
+  modelPath,
+  description,
+  zoom,
+  initialRotation,
+}: ModelViewerProps) => {
   return (
     <div
       className={styles.container}
@@ -17,7 +28,7 @@ const ModelViewer = ({ title, modelPath, description }: ModelViewerProps) => {
         <h2>{title}</h2>
       </div>
       <div className={styles.modelSection}>
-        <Scene modelPath={modelPath} />
+        <Scene modelPath={modelPath} zoom={zoom} initialRotation={initialRotation} />
       </div>
       {description && (
         <div className={styles.descriptionSection}>

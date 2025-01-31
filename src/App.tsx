@@ -3,7 +3,12 @@ import "./styles.css";
 
 const App = () => {
   return (
-    <div className="app">
+    <div
+      className="app"
+      style={{
+        marginBottom: "16px",
+      }}
+    >
       <div
         style={{
           width: "100%",
@@ -19,11 +24,15 @@ const App = () => {
       <ModelViewer
         modelPath="/models/MAIN_STRUCTURE.glb"
         title="MAIN STRUCTURE"
+        zoom={0.8}
+        initialRotation={{ x: 30, y: 10 }}
         description="Advanced CanSat design with cutting-edge sensors and deployment system"
       />
 
       <ModelViewer
-        modelPath="/models/CANSAT_CONTAINER.glb"
+        modelPath="/models/CANSAT.gltf"
+        zoom={0.35}
+        initialRotation={{ x: 70, y: 60 }}
         title="CANSAT CONTAINER"
         description="Advanced CanSat design with cutting-edge sensors and deployment system"
       />
