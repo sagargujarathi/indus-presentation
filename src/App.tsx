@@ -33,7 +33,7 @@ const App = () => {
         modelPath="/models/CANSAT.gltf"
         zoom={0.35}
         initialRotation={{ x: 70, y: 60 }}
-        title="CANSAT CONTAINER"
+        title="CANSAT"
         description="Advanced CanSat design with cutting-edge sensors and deployment system"
       />
 

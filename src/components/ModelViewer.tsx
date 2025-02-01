@@ -17,7 +17,6 @@ const ModelViewer = ({
   modelPath,
   description,
   zoom,
-  initialRotation,
 }: ModelViewerProps) => {
   return (
     <div
@@ -28,7 +27,7 @@ const ModelViewer = ({
         <h2>{title}</h2>
       </div>
       <div className={styles.modelSection}>
-        <Scene modelPath={modelPath} zoom={zoom} initialRotation={initialRotation} />
+        <Scene modelPath={modelPath} zoom={zoom} />
       </div>
       {description && (
         <div className={styles.descriptionSection}>
