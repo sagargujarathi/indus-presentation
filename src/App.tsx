@@ -22,14 +22,6 @@ const App = () => {
       </div>
 
       <ModelViewer
-        modelPath="/models/MAIN_STRUCTURE.glb"
-        title="MAIN STRUCTURE"
-        zoom={0.8}
-        initialRotation={{ x: 30, y: 10 }}
-        description="Advanced CanSat design with cutting-edge sensors and deployment system"
-      />
-
-      <ModelViewer
         modelPath="/models/CANSAT.gltf"
         zoom={0.35}
         initialRotation={{ x: 70, y: 60 }}
@@ -40,6 +32,15 @@ const App = () => {
       <ModelViewer
         modelPath="/models/CANSAT_CONTAINER.glb"
         title="CANSAT CONTAINER"
+        zoom={0.35}
+        initialRotation={{ x: 70, y: 60 }}
+        description="Advanced CanSat design with cutting-edge sensors and deployment system"
+      />
+
+      <ModelViewer
+        modelPath="/models/CANSAT_FOLDED.glb"
+        title="CANSAT CONTAINER"
+        zoom={0.35}
         description="Advanced CanSat design with cutting-edge sensors and deployment system"
       />
     </div>
